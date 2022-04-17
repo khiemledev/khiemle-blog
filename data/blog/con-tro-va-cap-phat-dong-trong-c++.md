@@ -9,6 +9,8 @@ authors: ['khiemle']
 summary: 'Tìm hiểu khái niệm cơ bản về con trỏ và cấp phát động trong C++, một trong những khái niệm quan trọng nhất trong lập trình C++.'
 ---
 
+![Pointer in C++](/static/thumbnails/2020/Pointer-in-c++.jpg)
+
 ## Con trỏ và cấp phát động trong C++
 
 Con trỏ (pointer) là một khái niệm quan trọng và khó nhất trong C++, nó thường được dùng để đánh giá mức độ thành thạo C++ của bạn. Việc sử dụng thành thạo con trỏ đi cùng với việc thành thạo các thao tác cấp phát động, quản lý bộ nhớ một cách chặt chẽ trong C++.
