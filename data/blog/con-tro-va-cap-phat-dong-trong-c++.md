@@ -1,11 +1,16 @@
 ---
-title: Con trỏ và cấp phát động trong C++
+title: 'Con trỏ và cấp phát động trong C++'
 date: '2020-03-29'
 lastmod: '2020-03-29'
 draft: false
-tags: ['lap-trinh', 'lap-trinh-c++']
-images:
-  ['/static/thumbnails/2020/Pointer-in-c++.jpg', '/static/images/2020/03/Memory-structure.png']
+tags: [
+	'lap-trinh',
+	'lap-trinh-c++'
+]
+images: [
+	'/static/thumbnails/2020/Pointer-in-c++.jpg',
+	'/static/images/2020/03/Memory-structure.png',
+]
 authors: ['khiemle']
 layout: PostLayout
 summary: 'Tìm hiểu khái niệm cơ bản về con trỏ và cấp phát động trong C++, một trong những khái niệm quan trọng nhất trong lập trình C++.'
@@ -26,7 +31,7 @@ RAM (**R**andom **A**ccess **M**emory) là bộ nhớ được dùng để lưu 
 Khi trình biên dịch thực hiện biên dịch code, nó sẽ dành riêng một vùng nhớ cho biến được khai báo, liên kết địa chỉ ô nhớ đầu tiên của vùng nhớ đó với tên biến và mỗi khi gọi đến biến đó, nó sẽ tự truy xuất đến vùng nhớ đã được liên kết với tên biến đó. Vùng nhớ của một biến là tập các ô nhớ liền kề nhau. Các biến khác nhau không nhất thiết các vùng nhớ của nó phải liền kề nhau.
 
 <p align="center">
-	<img src="/static/images/2020/03/Memory-structure.png" alt="Memory structure" />
+	<img src="/static/images/2020/03/con-tro-va-cap-phat-dong-trong-c++/Memory-structure.png" alt="Memory structure" />
 </p>
 
 Memory structure
@@ -282,7 +287,7 @@ Về bản chất, mảng thông thường thật ra chính là một mảng đ�
 int *const arr = new int[10];
 ```
 
-Do nó hơi phức tạp nên người ta thường sử dụng lớp vector cũng được dựa trên con trỏ và mảng động. Bạn có thể xem bài viết về vector của mình [tại đây](https://khiemle.dev/co-ban-ve-class-trong-cpp/).
+Do nó hơi phức tạp nên người ta thường sử dụng lớp vector cũng được dựa trên con trỏ và mảng động. Bạn có thể xem bài viết _Vector trong C++_[^vector_in_c++] của mình.
 
 # Con trỏ trỏ vào con trỏ
 
@@ -319,7 +324,7 @@ delete[] arr;
 arr = nullptr;
 ```
 
-Việc sử dụng con trỏ đối với mảng một chiều đã khá rắc rối rồi nên mình sẽ không đi sâu vào mảng nhiều chiều mà chỉ giới thiệu cho các bạn biết vậy thôi. Bạn nên sử dụng [vecter như trong bài viết này](https://khiemle.dev/co-ban-ve-class-trong-cpp/) mình giới thiệu.
+Việc sử dụng con trỏ đối với mảng một chiều đã khá rắc rối rồi nên mình sẽ không đi sâu vào mảng nhiều chiều mà chỉ giới thiệu cho các bạn biết vậy thôi. Bạn nên sử dụng lớp vector như trong bài viết _Vector trong C++_[^vector_in_c++] mình đã có giới thiệu.
 
 # Con trỏ và hàm
 
@@ -476,3 +481,5 @@ MyClass *ptr_class = new MyClass(5);
 Sử dụng con trỏ là một kĩ thuật rất quan trong, bạn sẽ cần sử dụng nó thật thành thạo để có thể học tốt các môn như Lập trình hướng đối tượng, Cấu trúc dữ liệu và giải thuật...
 
 Vậy là trong bài viết này, mình đã giới thiệu cho các bạn về con trỏ, bài viết này khá là dài nhưng có thể vẫn chưa đầy đủ vì con trỏ trong C++ là một kỹ thuật thật sự rất là hay mà nếu bạn giỏi C++, bạn phải nắm được hết tối thiểu những thứ mình đã giới thiệu trong bài viết. Cảm ơn các bạn đã dành thời gian theo dõi bài viết, nếu như bạn thấy hay, đừng quên chia sẻ với bạn bè. Cảm ơn các bạn rất nhiều!
+
+[^vector_in_c++]: [Vector trong C++](/blog/vector-trong-c++)
