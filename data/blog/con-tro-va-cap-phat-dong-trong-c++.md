@@ -4,18 +4,20 @@ date: '2020-03-29'
 lastmod: '2020-03-29'
 draft: false
 tags: ['lap-trinh', 'lap-trinh-c++']
-images: ['/static/thumbnails/2020/Pointer-in-c++.jpg', '/static/images/2020/03/Memory-structure.png']
+images:
+  ['/static/thumbnails/2020/Pointer-in-c++.jpg', '/static/images/2020/03/Memory-structure.png']
 authors: ['khiemle']
+layout: PostLayout
 summary: 'Tìm hiểu khái niệm cơ bản về con trỏ và cấp phát động trong C++, một trong những khái niệm quan trọng nhất trong lập trình C++.'
 ---
 
 ![Pointer in C++](/static/thumbnails/2020/Pointer-in-c++.jpg)
 
-## Con trỏ và cấp phát động trong C++
+# Con trỏ và cấp phát động trong C++
 
 Con trỏ (pointer) là một khái niệm quan trọng và khó nhất trong C++, nó thường được dùng để đánh giá mức độ thành thạo C++ của bạn. Việc sử dụng thành thạo con trỏ đi cùng với việc thành thạo các thao tác cấp phát động, quản lý bộ nhớ một cách chặt chẽ trong C++.
 
-## Kiến trúc máy tính
+# Kiến trúc máy tính
 
 Để hiểu được bài này, chúng ta cần biết được kiến thức cơ bản về bộ nhớ máy tính, cụ thể là RAM. Chúng ta sẽ không tìm hiểu quá sâu mà chỉ ở mức cơ bản, đủ để có thể hiểu được con trỏ hoạt động như thế nào.
 
@@ -31,7 +33,7 @@ Memory structure
 
 Tùy vào kích thước của kiểu dữ liệu mà trình biên dịch sẽ cấp phát số ô nhớ liền kề khác nhau tương ứng. Ví dụ như kiểu char có kích thước 1 byte thì sẽ cấp cho biến kiểu char 1 ô nhớ, kiểu int có 4 byte thì sẽ cấp cho 4 ô nhớ liền kề nhau và địa chỉ của biến đó là địa chỉ của ô nhớ đầu tiên của vùng nhớ đó. Ví dụ như hình trên thì ta có biến x kiểu int được cấp phát 4 ô nhớ và địa chỉ của biến x chính là địa chỉ của ô nhớ đầu tiên của vùng 4 ô nhớ đó chính là 0x0B.
 
-## Cấp phát tĩnh và cấp phát động
+# Cấp phát tĩnh và cấp phát động
 
 Biến tĩnh hay biến được cấp phát tĩnh là biến được khai báo bằng cú pháp khai báo biến, có tên và được cấp phát một vùng nhớ cố định trước khi sử dụng. Vùng nhớ cố định ở đây nghĩa là vùng nhớ đó luôn tồn tại khi chương trình thực thi, không thể được xóa đi (tức trả lại cho hệ điều hành) hoặc là thay đổi kích thước (đối với mảng), sau khi kết thúc chương trình sẽ tự động trả vùng nhớ đó lại cho hệ điều hành.
 
@@ -39,7 +41,7 @@ Chính việc cấp phát vùng nhớ cố định cho biến tĩnh gây chiếm
 
 Biến động hay biến được cấp phát động là biến thuộc một kiểu dữ liệu đã định nghĩa, không có tên, không được khai báo trong phần khai báo biến. Điều này có nghĩa là biến động là một biến được cấp phát một vùng nhớ trong bộ nhớ RAM, không được liên kết với tên biến do đó nó không có tên, nó chỉ là một vùng nhớ. Việc quản lý biến động được thực hiện qua con trỏ.
 
-## Biến con trỏ
+# Biến con trỏ
 
 Biến con trỏ hay thường gọi là con trỏ là biến dùng để lưu trữ giá trị là địa chỉ ô nhớ. Nghĩa là bản thân con trỏ là một biến thông thường nhưng mà nó chứa địa chỉ của biến tĩnh hoặc biến động. Như đã trình bày ở trên, biến động không có tên do đó chỉ có thể được quản lý qua con trỏ, do đó, con trỏ thường được dùng để chứa địa chỉ của biến động, lúc này ta nói con trỏ này trỏ đến hoặc con trỏ này tham chiếu đến biến hoặc vùng nhớ đó. Do con trỏ chỉ chứa địa chỉ nên mọi con trỏ đều có kích thước như nhau.
 
@@ -89,7 +91,7 @@ int *ptr_a = &a; // trỏ con trỏ ptr_a đến địa chỉ của biến a, t�
 cout << *ptr_a;  // in ra giá trị lưu trữ tại địa chỉ con trỏ trỏ tới, tức là 2409
 ```
 
-Do con trỏ trỏ tới biến là trỏ vào vùng nhớ mà biến đó được cấp nên khi ta thay đổi giá trị của vùng nhớ đó thì giá trị của biến cũng thay đổi theo. Quan sát ví dụ sau bạn sẽ thấy rõ hơn, biến a có giá trị là 2409, địa chỉ ô nhớ giả sử là 0x50, sau đó tạo con trỏ ptr\_a trỏ tới biến a. Khi ta thực hiện thay đổi giá trị tại địa chỉ con trỏ đang giữ qua toán tử \*, tức là đang thay đổi giá trị tại ô nhớ 0x50 do con trỏ đang trỏ tới a, mà 0x50 lại là địa chỉ của biến a, do đó giá trị của biến a cũng bị thay đổi theo.
+Do con trỏ trỏ tới biến là trỏ vào vùng nhớ mà biến đó được cấp nên khi ta thay đổi giá trị của vùng nhớ đó thì giá trị của biến cũng thay đổi theo. Quan sát ví dụ sau bạn sẽ thấy rõ hơn, biến a có giá trị là 2409, địa chỉ ô nhớ giả sử là 0x50, sau đó tạo con trỏ ptr_a trỏ tới biến a. Khi ta thực hiện thay đổi giá trị tại địa chỉ con trỏ đang giữ qua toán tử \*, tức là đang thay đổi giá trị tại ô nhớ 0x50 do con trỏ đang trỏ tới a, mà 0x50 lại là địa chỉ của biến a, do đó giá trị của biến a cũng bị thay đổi theo.
 
 ```cpp
 int a = 2409;    // giả sử địa chỉ ô nhớ của a là 0x50
@@ -102,13 +104,13 @@ Tóm lại về con trỏ, bạn cần nhớ được:
 
 Một số bạn sẽ hơi thắc mắc dấu \* trong lúc khai báo con trỏ và dấu \* trước con trỏ. Dấu \* trong lúc khai báo con trỏ chỉ là cú pháp để khai báo con trỏ mà thôi. Còn dấu \* trước con trỏ là toán tử \*, dùng để lấy giá trị lưu trữ tại địa chỉ mà con trỏ trỏ tới.
 
-- \*ptr\_a và a đều là chỉ giá trị của a
-- ptr\_a và &a đều là địa chỉ của biến a
+- \*ptr_a và a đều là chỉ giá trị của a
+- ptr_a và &a đều là địa chỉ của biến a
 - Không thể thay đổi hay tự quyết định địa chỉ của biến (việc này do hệ điều hành thực hiện)
 - Con trỏ chỉ có thể tham chiếu đến đối tượng có kiểu dữ liệu tương thích
 - Không thể tham chiếu con trỏ đến một biểu thức hay hằng (vì biểu thức, hằng làm gì có địa chỉ)
 
-## Hằng con trỏ và đối tượng hằng
+# Hằng con trỏ và đối tượng hằng
 
 Như đã trình bảy ở trên, biến con trỏ cũng giống như một biến bình thường nhưng dùng để lưu trữ địa chỉ, con trỏ cũng có hằng con trỏ như hằng bình thường. Hằng con trỏ sẽ được khởi tạo giá trị một lần duy nhất và không được gán lại giá trị mới, hay nói cách khác là chỉ trỏ đến một đối tượng duy nhất mà thôi. Cú pháp khai báo tương tự con trỏ nhưng có từ khóa const phía trước tên biến:
 
@@ -134,7 +136,7 @@ int a = 2409;
 const int *const ptr_a = &a;
 ```
 
-## Con trỏ NULL
+# Con trỏ NULL
 
 Con trỏ NULL (NULL pointer) hay con trỏ trỏ vào NULL là con trỏ không trỏ vào đâu cả, nó khác với con trỏ chưa được khởi tạo. Bởi vì khi được khai báo, con trỏ không được khởi tạo giá trị thì sẽ mang giá trị rác. Do đó, khi làm việc với con trỏ, khi chưa trỏ vào đâu cả thì ta nên khởi gán con trỏ đó bằng NULL (vì nếu không may, ta thực hiện truy xuất đến vùng nhớ rác không tồn tại sẽ gây ra kết quả không mong muốn).
 
@@ -158,7 +160,7 @@ else
 	cout << "NULL ptr";
 ```
 
-## Cấp phát động
+# Cấp phát động
 
 Qua ví dụ trên, một số bạn sẽ hỏi tại sao lại dùng con trỏ chi cho mệt vậy, cứ biến tĩnh mà dùng, sao phải dùng rồi lại thêm toán tử &, \* cho rối. Tất cả những ví dụ ở trên chỉ để cho bạn hiểu được con trỏ mà thôi, sức mạnh thực sự của con trỏ nằm ở chỗ nó được sử dụng để quản lý biến động.
 
@@ -215,7 +217,7 @@ delete ptr;
 ptr = nullptr;
 ```
 
-## Mảng động
+# Mảng động
 
 Mảng động là một topic quan trọng trong C++, việc sử dụng mảng thông thường, bạn sẽ không thể thay đổi kích thước của mảng (thêm khi cần và xóa khi không cần), mảng động sẽ giải quyết việc này. Để cấp phát một mảng động, ta sử dụng toán tử new và sau kiểu dữ liệu phải cung cấp số lượng phần tử \[size\]:
 
@@ -282,7 +284,7 @@ int *const arr = new int[10];
 
 Do nó hơi phức tạp nên người ta thường sử dụng lớp vector cũng được dựa trên con trỏ và mảng động. Bạn có thể xem bài viết về vector của mình [tại đây](https://khiemle.dev/co-ban-ve-class-trong-cpp/).
 
-## Con trỏ trỏ vào con trỏ
+# Con trỏ trỏ vào con trỏ
 
 Con trỏ cũng giống như một biến thông thường nên nó sẽ có địa chỉ, do đó, một con trỏ có thể được một con trỏ khác trỏ tới. Ví dụ;
 
@@ -319,7 +321,7 @@ arr = nullptr;
 
 Việc sử dụng con trỏ đối với mảng một chiều đã khá rắc rối rồi nên mình sẽ không đi sâu vào mảng nhiều chiều mà chỉ giới thiệu cho các bạn biết vậy thôi. Bạn nên sử dụng [vecter như trong bài viết này](https://khiemle.dev/co-ban-ve-class-trong-cpp/) mình giới thiệu.
 
-## Con trỏ và hàm
+# Con trỏ và hàm
 
 Con trỏ là một kiểu dữ liệu, do đó nó có thể được sử dụng trong lúc truyền tham số cho hàm hoặc kiểu dữ liệu trả về.
 
@@ -345,7 +347,7 @@ doSomething(pt);
 
 Lưu ý do thao tác trên con trỏ là thao tác trên địa chỉ ô nhớ, vậy nên thay đổi giá trị tại địa chỉ ô nhớ cũng làm thay đổi luôn giá trị của biến nó tham chiếu tới tương tự như biến tham chiếu vậy.
 
-## Con trỏ hàm
+# Con trỏ hàm
 
 Ngoài những loại con trỏ trên, ta còn có một loại con trỏ đặc biệt nữa đó chính là con trỏ hàm (function pointer). Để khai báo một con trỏ hàm, ta sử dụng cú pháp sau:
 
@@ -412,7 +414,7 @@ Có một só điều bạn cần lưu ý về con trỏ hàm như sau:
 - Giống như một con trỏ thông thường, ta cũng có thể có một mảng con trỏ hàm. Con trỏ hàm cũng có thể được sử dụng như để rẽ nhánh như sau:
 - Giống như con trỏ thông thường, con trỏ hàm có thể được truyền cho hàm, giống như ví dụ bên trên. Loại con trỏ này rất thường đường sử dụng trong C++.
 
-## Con trỏ và đối tượng
+# Con trỏ và đối tượng
 
 Con trỏ không có kiểu dữ liệu cụ thể mà phụ thuộc vào đối tượng nó trỏ vào, do đó nó có thể là bất kỳ bao gồm kiểu dữ liệu do người dùng định nghĩa như struct hay class. Ví dụ:
 
@@ -469,7 +471,7 @@ MyStruct *ptr_struct = new MyStruct;
 MyClass *ptr_class = new MyClass(5);
 ```
 
-## Tổng kết
+# Tổng kết
 
 Sử dụng con trỏ là một kĩ thuật rất quan trong, bạn sẽ cần sử dụng nó thật thành thạo để có thể học tốt các môn như Lập trình hướng đối tượng, Cấu trúc dữ liệu và giải thuật...
 

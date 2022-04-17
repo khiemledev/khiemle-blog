@@ -6,12 +6,13 @@ draft: false
 tags: ['lap-trinh', 'lap-trinh-c++']
 images: ['/static/thumbnails/2020/Co-ban-ve-class-trong-c++.jpg']
 authors: ['khiemle']
+layout: PostLayout
 summary: 'Tìm hiểu các khái niệm, kiến thức cơ bản về class trong C++. Thế nào là class, hàm dựng, thuộc tính và phương thức của class.'
 ---
 
 ![CoBanVeClassTrongC++](/static/thumbnails/2020/Co-ban-ve-class-trong-c++.jpg)
 
-## Class là gì?
+# Class là gì?
 
 Class hay lớp là một mô tả trừu tượng (abstract) của nhóm các đối tượng (object) có cùng bản chất, ngược lại mỗi một đối tượng là một thể hiện cụ thể (instance) cho những mô tả trừu tượng đó. Một class trong C++ sẽ có các đặc điểm sau:
 
@@ -21,7 +22,7 @@ Class hay lớp là một mô tả trừu tượng (abstract) của nhóm các �
 
 Ví dụ về một class đơn giản, class Car. Một chiếc xe hơi vậy thì sẽ có chung những đặc điểm là đều có vô lăng, có bánh xe nhiều hơn 3, có động cơ... Đó là một class, một cái model hay mẫu mà người ta đã quy định là nếu đúng như vậy thì nó là xe hơi. Nhưng mà xe thì có thể có nhiều hãng khác nhau, BMW, Vinfast, Toyota... Thì mỗi hãng xe lại có những model xe khác nhau nhưng chúng đều là xe hơi. Vậy thì trong lập trình cũng vậy, class là quy định ra một mẫu, một cái model mà các thể hiện của nó (instance) hay đối tượng (object) phải tuân theo.
 
-### Khai báo class và sử dụng class
+## Khai báo class và sử dụng class
 
 Cú pháp khai báo một class cơ bản trong C++ như sau:
 
@@ -113,7 +114,7 @@ person.lastName = "Le";
 person.fullname(); // sẽ in ra màn hình là "Khiem Le"
 ```
 
-### Access modifiers & properties declaration
+## Access modifiers & properties declaration
 
 Access modifier là phạm vi truy cập của các thuộc tính và phương thức sẽ được khai báo bên dưới nó. Có 3 phạm vi truy cập trong C++ là public, private và protected.
 
@@ -138,7 +139,7 @@ class MyClass
 
 Đối với quy cách đặt tên biến, bạn có thể sử dụng PascalCase, CammelCase... nhưng đối với các thuộc tính và phương thức private bạn nên đặt tên có dấu \_ đầu. Ví dụ như \_privateProp. Trong một số ngôn ngữ bật cao, thậm chí đã không còn từ khóa private mà thay vào đó sẽ chỉ là dấu \_ trước tên biến (ví dụ như Dart).
 
-### Method declaration
+## Method declaration
 
 Phương thức cũng giống như một hàm bình thường, bạn cũng có thể không trả về giá trị, có thể có hoặc không có tham số, có thể override hàm... Đối với các tham số truyền vào phương thức, bạn cũng có thể đặt tên trùng với thuộc tính của class, sử dụng kết hợp với toán tử :: và con trỏ this. Hoặc bạn có thể đặt tên khác với thuộc tính (thường thì sẽ thêm dấu \_ trước tên tham số như là thuộc tính private vậy).
 
@@ -187,7 +188,7 @@ void Animal::makeNoise() const {
 }
 ```
 
-### Getter & setter
+## Getter & setter
 
 Đối với thuộc tính private, ta không thể truy cập trực tiếp từ bên ngoài, vậy có cách nào để truy cập? Đây là lúc sử dụng phương thức. Các phương thức lấy giá trị của thuộc tính được gọi là getter, các phương thức gán giá trị cho thuộc tính được gọi là setter.
 
@@ -237,7 +238,7 @@ class MyClass {
 
 Lưu ý cách đặt tên getter và setter. Bạn nên đặt get vào trước tên getter và set vào trước tên setter như ví dụ bên trên của mình. Và cũng theo như phần lưu ý cuối mục "Method declaration" ở trên, các getter nên đặt là "const" bởi vì getter chỉ lấy giá trị chứ không thay đổi giá trị thuộc tính.
 
-### Constructor
+## Constructor
 
 Constructor hay hàm dựng là một hàm đặc biệt, nó sẽ được gọi ngay khi chúng ta khởi tạo một object. Vậy thì tại sao chúng ta lại cần có constructor?
 
@@ -310,7 +311,7 @@ person.fullname(); // Khiem Le
 
 Như vậy chúng ta không cần phải set từng thuộc tính cho object đó mà khởi tạo trực tiếp qua constructor.
 
-### Destructor
+## Destructor
 
 Đối với một số ngôn ngữ lập trình khác có thể destructor không phổ biến, nhưng đối với C++, việc được quản lý bộ nhớ một cách hoàn toàn do người lập trình làm chủ thì destructor là vô cùng cần thiết. Hãy thử nghĩ xem, trong số thuộc tính của class bạn định nghĩa có một con trỏ, mảng động... và bạn không sử dụng desctructor thì sẽ như thế nào? Đương nhiên sẽ xảy ra chuyện rò rỉ bộ nhớ và điều này cực kì không tốt. Với destructor bạn có thể xóa con trỏ đi khi object được thu hồi hoặc bạn có thể gọi tường minh destructor.
 
@@ -334,7 +335,7 @@ ClassName t; // gọi constructor không tường minh
 t.~MyClass();
 ```
 
-### Static member
+## Static member
 
 Static member hay thành viên tĩnh trong class C++ cũng tương tự như với static variable (biến tĩnh) trong function. Đối với function, sau khi thực hiện xong khối lệnh và thoát thì biến tĩnh vẫn sẽ không mất đi. Đối với class, thành viên tĩnh sẽ là thuộc tính dùng chung cho tất cả các đối tượng của class đó, cho dù là không có đối tượng nào tồn tại. Tức là bạn có thể khai báo nhiều object, mỗi object các thuộc tính của nó đều khác nhau nhưng riêng static thì chỉ có một và static member tồn tại trong suốt chương trình cho dù có hay không có object nào của nó hay nói ngắn gọn là dùng chung một biến static.
 
@@ -422,6 +423,6 @@ class Person {
 };
 ```
 
-## Tổng kết
+# Tổng kết
 
 Qua bài viết này, mình đã giới thiệu cho các bạn về class, thuộc tính, phương thức và hàm dựng trong C++. Trong bài viết thì cách đặt tên hàm, biến có phần không thống nhất với nhau, bạn nên chọn một cách đặt tên phù hợp nhất với bản thân để clean code. Nếu có sai xót hoặc thắc mắc gì, các bạn có thể để lại bình luận bên dưới bài viết để giúp mình phát triển bài viết tốt hơn. Cảm ơn các bạn đã theo dõi bài viết!
