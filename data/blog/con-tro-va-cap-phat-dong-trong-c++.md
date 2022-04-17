@@ -4,7 +4,7 @@ date: '2020-03-29'
 lastmod: '2020-03-29'
 draft: false
 tags: ['lap-trinh', 'lap-trinh-c++']
-images: ['/static/thumbnails/2020/Pointer-in-c++.jpg']
+images: ['/static/thumbnails/2020/Pointer-in-c++.jpg', '/static/images/2020/03/Memory-structure.png']
 authors: ['khiemle']
 summary: 'Tìm hiểu khái niệm cơ bản về con trỏ và cấp phát động trong C++, một trong những khái niệm quan trọng nhất trong lập trình C++.'
 ---
