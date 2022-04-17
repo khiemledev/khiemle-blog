@@ -5,7 +5,7 @@ const siteMetadata = {
   description: 'Write code for better life',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://khiemle.dev',
+  siteUrl: 'https://khiemle-blog.vercel.app',
   siteRepo: 'https://github.com/khiemledev/khiemle-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
