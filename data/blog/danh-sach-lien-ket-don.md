@@ -8,7 +8,7 @@ authors: ['khiemle']
 layout: PostLayout
 images:
   [
-    '/static/images/2020/03/danh-sach-lien-ket-don/Danh-sach-lien-ket-don.jpg',
+    '/static/thumbnails/2020/Danh-sach-lien-ket-don.jpg',
     '/static/images/2020/03/danh-sach-lien-ket-don/Add-node-to-head.png',
     '/static/images/2020/03/danh-sach-lien-ket-don/Add-node-to-tail.png',
     '/static/images/2020/03/danh-sach-lien-ket-don/Insert-after-Q.png',
@@ -19,7 +19,7 @@ images:
 summary: 'Danh sách liên kết đơn là một cấu trúc dữ liệu quan trọng mà một lập trình viên cần nắm được. Trong bài viết này, chúng ta sẽ cùng tìm hiểu về danh sách liên kết đơn là gì, những thao tác trên danh sách liên kết đơn.'
 ---
 
-![Danh sach lien ket don](/static/images/2020/03/danh-sach-lien-ket-don/Danh-sach-lien-ket-don.jpg)
+![Danh sach lien ket don](/static/thumbnails/2020/Danh-sach-lien-ket-don.jpg)
 
 [Youtube: Danh sách liên kết đơn | Khiêm Lê](https://youtu.be/UokzPpBcnr0)
 
