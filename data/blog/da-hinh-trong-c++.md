@@ -26,10 +26,10 @@ Ví dụ hai con vật là con chó và con mèo, hai con vật này đều có 
 
 Trước khi đi vào chi tiết, hãy chắc chắn rằng bạn đã nắm được các kiến thức sau:
 
-- [Con trỏ và cấp phát động trong C++](/blog/con-tro-va-cap-phat-dong-trong-c++)
-- [Cơ bản về Class trong C++](/blog/co-ban-ve-class-trong-c++)
-- [Kế thừa trong C++](/blog/ke-thua-trong-c++)
-- [Vector trong C++](/blog/vector-trong-c++)
+- _Con trỏ và cấp phát động trong C++_[^pointer_in_c++]
+- _Cơ bản về Class trong C++_[^class_in_c++]
+- _Kế thừa trong C++_[^inherit_in_c++]
+- _Vector trong C++_[^vector_in_c++]
 
 # Các loại đa hình
 
@@ -644,3 +644,8 @@ int main()
     return 0;
 }
 ```
+
+[^pointer_in_c++]: [Con trỏ và cấp phát động trong C++](/blog/con-tro-va-cap-phat-dong-trong-c++)
+[^class_in_c++]: [Cơ bản về Class trong C++](/blog/co-ban-ve-class-trong-c++)
+[^inherit_in_c++]: [Kế thừa trong C++](/blog/ke-thua-trong-c++)
+[^vector_in_c++]: [Vector trong C++](/blog/vector-trong-c++)
