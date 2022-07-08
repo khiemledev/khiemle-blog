@@ -31,7 +31,7 @@ Danh sách liên kết đơn (Single Linked List) là một cấu trúc dữ li�
 - Thành phần liên kết: lưu địa chỉ phần tử đứng sau trong danh sách, nếu phần tử đó là phần tử cuối cùng thì thành phần này bằng NULL.
 
 <p align="center">
-  <img src="/static/images/2020/03/danh-sach-lien-ket-don/Single-linked-list.png" alt="Minh hoạ danh sách liên kết đơn"/>
+  ![Minh hoạ danh sách liên kết đơn](/static/images/2020/03/danh-sach-lien-ket-don/Single-linked-list.png)
 </p>
 
 Minh họa danh sách liên kết đơn
@@ -131,7 +131,7 @@ void AddHead(LinkedList& l, Node* node)
 ```
 
 <p align="center">
-  <img src="/static/images/2020/03/danh-sach-lien-ket-don/Add-node-to-head.png" alt="Thêm phần tử vào đầu danh sách liên kết đơn"/>
+  ![Thêm phần tử vào đầu danh sách liên kết đơn](/static/images/2020/03/danh-sach-lien-ket-don/Add-node-to-head.png)
 </p>
 
 Thêm phần tử vào đầu danh sách liên kết đơn
@@ -159,7 +159,7 @@ void AddTail(LinkedList& l, Node* node)
 ```
 
 <p align="center">
-  <img src="/static/images/2020/03/danh-sach-lien-ket-don/Add-node-to-tail.png" alt="Thêm phần tử vào cuối danh sách liên kết đơn"/>
+  ![Thêm phần tử vào cuối danh sách liên kết đơn](/static/images/2020/03/danh-sach-lien-ket-don/Add-node-to-tail.png)
 </p>
 
 Thêm phần tử vào cuối danh sách liên kết đơn
@@ -186,7 +186,7 @@ void InsertAfterQ(LinkedList& l, Node* p, Node* q)
 ```
 
 <p align="center">
-  <img src="/static/images/2020/03/danh-sach-lien-ket-don/Insert-after-Q.png" alt="Thêm phần tử vào sau nút Q trong danh sách liên kết đơn"/>
+  ![Thêm phần tử vào sau nút Q trong danh sách liên kết đơn](/static/images/2020/03/danh-sach-lien-ket-don/Insert-after-Q.png)
 </p>
 
 Thêm phần tử vào sau nút Q trong danh sách liên kết đơn
@@ -219,7 +219,7 @@ int RemoveHead(LinkedList& l, int& x)
 Lưu ý trước khi xóa node head đi, ta dùng biến tham chiếu x để lưu trữ lại giá trị của node bị hủy để sử dụng.
 
 <p align="center">
-  <img src="/static/images/2020/03/danh-sach-lien-ket-don/Remove-head.png" alt="Xóa phần tử đầu danh sách liên kết đơn"/>
+  ![Xóa phần tử đầu danh sách liên kết đơn](/static/images/2020/03/danh-sach-lien-ket-don/Remove-head.png)
 </p>
 
 Xóa phần tử đầu danh sách liên kết đơn
@@ -252,7 +252,7 @@ int RemoveAfterQ(LinkedList& l, Node* q, int& x)
 ```
 
 <p align="center">
-  <img src="/static/images/2020/03/danh-sach-lien-ket-don/Remove-after-Q.png" alt="Xóa phần tử sau nút Q trong danh sách liên kết đơn"/>
+  ![Xóa phần tử sau nút Q trong danh sách liên kết đơn](/static/images/2020/03/danh-sach-lien-ket-don/Remove-after-Q.png)
 </p>
 
 Xóa phần tử sau nút Q trong danh sách liên kết đơn

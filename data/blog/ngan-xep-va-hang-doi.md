@@ -39,7 +39,7 @@ Các thao tác cơ bản trên ngăn xếp như sau:
 - Top: trả về giá trị của phần tử nằm trên cùng của ngăn xếp (nếu ngăn xếp không rỗng)
 
 <p align="center">
-  <img src="/static/images/2020/04/ngan-xep-va-hang-doi/Stack.png" alt="Ngăn xếp"/>
+    ![Ngăn xếp](/static/images/2020/04/ngan-xep-va-hang-doi/Stack.png)
 </p>
 
 Ngăn xếp
@@ -170,7 +170,7 @@ Các thao tác cơ bản trên hàng đợi:
 - Front: trả về giá trị của phần tử ở đầu hàng đợi (nếu hàng đợi không rỗng)
 
 <p align="center">
-  <img src="/static/images/2020/04/ngan-xep-va-hang-doi/Queue.png" alt="Hàng đợi"/>
+    ![Hàng đợi](/static/images/2020/04/ngan-xep-va-hang-doi/Queue.png)
 </p>
 
 Hàng đợi

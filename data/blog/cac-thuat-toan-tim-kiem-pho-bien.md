@@ -46,7 +46,7 @@ Chúng ta có một mảng A có n phần tử bắt đầu từ vị trí 0. Đ
    - Nếu i < n thì quay lại bước 2.
 
 <p align="center">
-  <img src="/static/images/2020/05/cac-thuat-toan-tim-kiem-pho-bien/Linear-Search.png" alt="Tìm kiếm tuyến tình" />
+  ![Tìm kiếm tuyến tình](/static/images/2020/05/cac-thuat-toan-tim-kiem-pho-bien/Linear-Search.png)
 </p>
 
 Tìm kiếm tuyến tính
@@ -119,7 +119,7 @@ Cho một mảng A có n phần tử bắt đầu từ vị trí 0, mảng A đ�
    - Sai thì dừng và trả về kết quả -1 (không tìm thấy x)
 
 <p align="center">
-  <img src="/static/images/2020/05/cac-thuat-toan-tim-kiem-pho-bien/Binary-Search.png" alt="Tìm kiếm nhị phân"/>
+  ![Tìm kiếm nhị phân](/static/images/2020/05/cac-thuat-toan-tim-kiem-pho-bien/Binary-Search.png)
 </p>
 
 Tìm kiếm nhị phân
