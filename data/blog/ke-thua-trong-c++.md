@@ -6,18 +6,18 @@ draft: false
 tags: ['lap-trinh', 'lap-trinh-c++']
 images:
   [
-    '/static/thumbnails/2020/Ke-thua-trong-c++.jpg',
-    '/static/images/2020/05/ke-thua-trong-c++/Single-Inheritance.jpg',
-    '/static/images/2020/05/ke-thua-trong-c++/Multilevel-Inheritance.jpg',
-    '/static/images/2020/05/ke-thua-trong-c++/Hierarchical-Inheritance.jpg',
-    '/static/images/2020/05/ke-thua-trong-c++/Nested-Inheritance.jpg',
-    '/static/images/2020/05/ke-thua-trong-c++/Access-modifiers-inheritance.jpg',
+    '/static/thumbnails/2020/Ke-thua-trong-cpp.jpg',
+    '/static/images/2020/05/ke-thua-trong-cpp/Single-Inheritance.jpg',
+    '/static/images/2020/05/ke-thua-trong-cpp/Multilevel-Inheritance.jpg',
+    '/static/images/2020/05/ke-thua-trong-cpp/Hierarchical-Inheritance.jpg',
+    '/static/images/2020/05/ke-thua-trong-cpp/Nested-Inheritance.jpg',
+    '/static/images/2020/05/ke-thua-trong-cpp/Access-modifiers-inheritance.jpg',
   ]
 authors: ['khiemle']
 summary: 'Kế thừa là một trong những cơ chế quan trọng trong lập trình hướng đối tượng, nó giúp bạn có thể sử dụng lại code đã có cũng như dễ dàng quản lý source code. Trong bài viết hôm nay chúng ta sẽ cùng tìm hiểu về kế thừa trong C++.'
 ---
 
-![Kế thừa trong C++](/static/thumbnails/2020/Ke-thua-trong-c++.jpg)
+![Kế thừa trong C++](/static/thumbnails/2020/Ke-thua-trong-cpp.jpg)
 
 Kế thừa trong lập trình hướng đối tượng là một tính chất rất quan trọng, do đó, các bạn nên nắm kỹ phần này để có thể học tốt lập trình hướng đối tượng. Trong các kỳ kiểm tra, phỏng vấn xin việc cũng thường được hỏi về tính chất này.
 
@@ -36,7 +36,7 @@ Ví dụ như bạn có một class con người, có các thuộc tính cơ b�
 Ngoài các thuộc tính của class cha, class con còn có thể có thêm các thuộc tính, phương thức của riêng mình. Ví dụ như sinh viên thì có thêm các thuộc tính như MSSV, tên trường, chuyên ngành...
 
 <p align="center">
-  <img src="/static/images/2020/05/ke-thua-trong-c++/Single-Inheritance.jpg" alt="Tính kế thừa"/>
+  <img src="/static/images/2020/05/ke-thua-trong-cpp/Single-Inheritance.jpg" alt="Tính kế thừa"/>
 </p>
 
 Tính kế thừa
@@ -90,7 +90,7 @@ Chúng ta đã cùng tìm hiểu qua về kế thừa là gì và tại sao cầ
 Kế thừa đơn (single inheritance) là một class con kế thừa duy nhất từ một class cha. Ví dụ như class sinh viên chỉ kế thừa duy nhất từ class con người, đó là một kế thừa đơn.
 
 <p align="center">
-  <img src="/static/images/2020/05/ke-thua-trong-c++/Single-Inheritance.jpg" alt="Đơn kế thừa"/>
+  <img src="/static/images/2020/05/ke-thua-trong-cpp/Single-Inheritance.jpg" alt="Đơn kế thừa"/>
 </p>
 
 Đơn kế thừa
@@ -100,7 +100,7 @@ Kế thừa đơn (single inheritance) là một class con kế thừa duy nhấ
 Kế thừa đa cấp (multilevel inheritance) là một class con kế thừa từ một class cha, class cha đó lại kết thừa từ một lớp khác. Ví dụ như class sinh viên kế thừa từ class học sinh, class học sinh lại kế thừa từ class con người, đó là một kế thừa đa cấp.
 
 <p align="center">
-  <img src="/static/images/2020/05/ke-thua-trong-c++/Multilevel-Inheritance.jpg" alt="Kế thừa đa cấp"/>
+  <img src="/static/images/2020/05/ke-thua-trong-cpp/Multilevel-Inheritance.jpg" alt="Kế thừa đa cấp"/>
 </p>
 
 Kế thừa đa cấp
@@ -110,7 +110,7 @@ Kế thừa đa cấp
 Kế thừa phân cấp (hierarchical inheritance) là khi có nhiều hơn một class con kế thừa từ class cha. Ví dụ như class sinh viên và class công nhân đều kế thừa từ class cha là con người.
 
 <p align="center">
-  <img src="/static/images/2020/05/ke-thua-trong-c++/Hierarchical-Inheritance.jpg" alt="Kế thừa phân cấp"/>
+  <img src="/static/images/2020/05/ke-thua-trong-cpp/Hierarchical-Inheritance.jpg" alt="Kế thừa phân cấp"/>
 </p>
 
 Kế thừa phân cấp
@@ -118,7 +118,7 @@ Kế thừa phân cấp
 Một sơ đồ class không chỉ có một trong 3 loại kế thừa trên, nó thậm chí có thể có cả 3 và điều này hoàn toàn bình thường và gặp rất thường xuyên.
 
 <p align="center">
-  <img src="/static/images/2020/05/ke-thua-trong-c++/Nested-Inheritance.jpg" alt="Sơ đồ class"/>
+  <img src="/static/images/2020/05/ke-thua-trong-cpp/Nested-Inheritance.jpg" alt="Sơ đồ class"/>
 </p>
 
 Sơ đồ Class
@@ -168,7 +168,7 @@ Có hai loại phạm vi truy cập, truy cập các thành phần từ bên ngo
   - Các thuộc tính protected của A sẽ trở thành thuộc tính protected của B
 
 <p align="center">
-  <img src="/static/images/2020/05/ke-thua-trong-c++/Access-modifiers-inheritance.jpg" alt="Phạm vi truy cập trong kế thừa C++"/>
+  <img src="/static/images/2020/05/ke-thua-trong-cpp/Access-modifiers-inheritance.jpg" alt="Phạm vi truy cập trong kế thừa C++"/>
 </p>
 
 Phạm vi truy cập trong kế thừa C++

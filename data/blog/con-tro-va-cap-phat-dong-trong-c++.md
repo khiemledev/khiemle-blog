@@ -8,15 +8,15 @@ tags: [
 	'lap-trinh-c++'
 ]
 images: [
-	'/static/thumbnails/2020/Pointer-in-c++.jpg',
-	'/static/images/2020/03/Memory-structure.png',
+	'/static/thumbnails/2020/Pointer-in-cpp.jpg',
+	'/static/images/2020/03/con-tro-va-cap-phat-dong-trong-cpp/Memory-structure.png',
 ]
 authors: ['khiemle']
 layout: PostLayout
 summary: 'Tìm hiểu khái niệm cơ bản về con trỏ và cấp phát động trong C++, một trong những khái niệm quan trọng nhất trong lập trình C++.'
 ---
 
-![Pointer in C++](/static/thumbnails/2020/Pointer-in-c++.jpg)
+![Pointer in C++](/static/thumbnails/2020/Pointer-in-cpp.jpg)
 
 # Con trỏ và cấp phát động trong C++
 
@@ -31,7 +31,7 @@ RAM (**R**andom **A**ccess **M**emory) là bộ nhớ được dùng để lưu 
 Khi trình biên dịch thực hiện biên dịch code, nó sẽ dành riêng một vùng nhớ cho biến được khai báo, liên kết địa chỉ ô nhớ đầu tiên của vùng nhớ đó với tên biến và mỗi khi gọi đến biến đó, nó sẽ tự truy xuất đến vùng nhớ đã được liên kết với tên biến đó. Vùng nhớ của một biến là tập các ô nhớ liền kề nhau. Các biến khác nhau không nhất thiết các vùng nhớ của nó phải liền kề nhau.
 
 <p align="center">
-	<img src="/static/images/2020/03/con-tro-va-cap-phat-dong-trong-c++/Memory-structure.png" alt="Memory structure" />
+	![Memory structure](/static/images/2020/03/con-tro-va-cap-phat-dong-trong-cpp/Memory-structure.png)
 </p>
 
 Memory structure

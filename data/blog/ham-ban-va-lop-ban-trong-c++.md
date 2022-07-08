@@ -4,13 +4,13 @@ date: '2020-04-05'
 lastmod: '2020-04-05'
 draft: false
 tags: ['lap-trinh', 'lap-trinh-c++']
-images: ['/static/thumbnails/2020/Ham-ban-va-lop-ban-trong-c++.jpg']
+images: ['/static/thumbnails/2020/Ham-ban-va-lop-ban-trong-cpp.jpg']
 authors: ['khiemle']
 layout: PostLayout
 summary: 'Nếu như bạn đã học lập trình hướng đối tượng trong C++ thì chắc bạn bạn không thể nào không học về hàm bạn và lớp bạn trong C++. Trong bài viết này mình sẽ giới thiệu cho các bạn về hàm bạn và lớp bạn trong C++.'
 ---
 
-![Hàm bạn và lớp bạn trong C++](/static/thumbnails/2020/Ham-ban-va-lop-ban-trong-c++.jpg)
+![Hàm bạn và lớp bạn trong C++](/static/thumbnails/2020/Ham-ban-va-lop-ban-trong-cpp.jpg)
 
 # Đặt vấn đề
 

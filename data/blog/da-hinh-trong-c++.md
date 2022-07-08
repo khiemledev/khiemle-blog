@@ -6,15 +6,15 @@ draft: false
 tags: ['lap-trinh', 'lap-trinh-c++']
 images:
   [
-    '/static/thumbnails/2020/Da-hinh-trong-c++.jpg',
-    '/static/images/2020/06/da-hinh-trong-c++/Polymorphism-Class-Diagram-1.jpg',
+    '/static/thumbnails/2020/Da-hinh-trong-cpp.jpg',
+    '/static/images/2020/06/da-hinh-trong-cpp/Polymorphism-Class-Diagram-1.jpg',
   ]
 authors: ['khiemle']
 layout: PostLayout
 summary: 'Để tiếp nối chuỗi bài viết về lập trình hướng đối tượng trong C++, mình sẽ giới thiệu với các bạn về đa hình trong C++.'
 ---
 
-![Đa hình trong C++](/static/thumbnails/2020/Da-hinh-trong-c++.jpg)
+![Đa hình trong C++](/static/thumbnails/2020/Da-hinh-trong-cpp.jpg)
 
 # Đa hình là gì?
 
@@ -48,7 +48,7 @@ Như định nghĩa của đa hình, đa hình thực hiện cùng một thông 
 Ví dụ mình có bài toán công ty quản lý hai loại nhân viên là nhân viên văn phòng (NVVP) và nhân viên sản xuất (NVSX), mình sẽ cho người dùng nhập nhân nhiên và tính lương sau đó xuất ra. Mình sẽ có sơ đồ class như sau:
 
 <p align="center">
-  <img src="/static/images/2020/06/da-hinh-trong-c++/Polymorphism-Class-Diagram-1.jpg" alt="Sơ đồ Class"/>
+  <img src="/static/images/2020/06/da-hinh-trong-cpp/Polymorphism-Class-Diagram-1.jpg" alt="Sơ đồ Class"/>
 </p>
 
 Sơ đồ Class

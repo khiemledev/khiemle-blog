@@ -4,13 +4,13 @@ date: '2020-03-25'
 lastmod: '2020-03-25'
 draft: false
 tags: ['lap-trinh', 'lap-trinh-c++']
-images: ['/static/thumbnails/2020/Co-ban-ve-class-trong-c++.jpg']
+images: ['/static/thumbnails/2020/Co-ban-ve-class-trong-cpp.jpg']
 authors: ['khiemle']
 layout: PostLayout
 summary: 'Tìm hiểu các khái niệm, kiến thức cơ bản về class trong C++. Thế nào là class, hàm dựng, thuộc tính và phương thức của class.'
 ---
 
-![CoBanVeClassTrongC++](/static/thumbnails/2020/Co-ban-ve-class-trong-c++.jpg)
+![CoBanVeClassTrongC++](/static/thumbnails/2020/Co-ban-ve-class-trong-cpp.jpg)
 
 # Class là gì?
 

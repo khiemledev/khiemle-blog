@@ -6,7 +6,7 @@ draft: false
 tags: ['cau-truc-du-lieu-giai-thuat', 'lap-trinh', 'lap-trinh-c++']
 images:
   [
-    '/static/thumbnails/2020/Ngan-xep-va-hang-doi-trong-c++.jpg',
+    '/static/thumbnails/2020/Ngan-xep-va-hang-doi-trong-cpp.jpg',
     '/static/images/2020/04/ngan-xep-va-hang-doi/Stack.png',
     '/static/images/2020/04/ngan-xep-va-hang-doi/Queue.png',
   ]
@@ -15,7 +15,7 @@ layout: PostLayout
 summary: 'Ngăn xếp và hàng đợi là một cấu trúc dữ liệu mà chắc chắn lập trình viên nào cũng cần phải nắm được. Không chỉ được áp dụng nhiều trong lập trình, ngăn xếp và hàng đợi còn được nhiều nhà phỏng vấn hỏi khi đi ứng tuyển. Do đó trong bài viết hôm nay chúng ta sẽ cùng tìm hiểu về ngăn xếp và hàng đợi.'
 ---
 
-![Ngăn xếp và hàng đợi](/static/thumbnails/2020/Ngan-xep-va-hang-doi-trong-c++.jpg)
+![Ngăn xếp và hàng đợi](/static/thumbnails/2020/Ngan-xep-va-hang-doi-trong-cpp.jpg)
 
 # Giới thiệu
 

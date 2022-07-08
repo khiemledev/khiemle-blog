@@ -4,13 +4,13 @@ date: '2020-03-24'
 lastmod: '2020-03-24'
 draft: false
 tags: ['lap-trinh', 'lap-trinh-c++']
-images: ['/static/thumbnails/2020/Vector-trong-c++.jpg']
+images: ['/static/thumbnails/2020/Vector-trong-cpp.jpg']
 authors: ['khiemle']
 layout: PostLayout
 summary: 'Vector là một lớp định nghĩa sẵn trong C++, cung cấp các thao tác giúp bạn dễ dàng quản lý và thao tác với mảng động trong C++. Trong bài viết này chúng ta sẽ tìm hiểu cách sử dụng vector trong C++.'
 ---
 
-![Vector trong C++](/static/thumbnails/2020/Vector-trong-c++.jpg)
+![Vector trong C++](/static/thumbnails/2020/Vector-trong-cpp.jpg)
 
 # Vector là gì và tại sao nên dùng vector?
 

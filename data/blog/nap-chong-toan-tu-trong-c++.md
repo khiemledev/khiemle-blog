@@ -4,13 +4,13 @@ date: '2020-04-10'
 lastmod: '2020-04-10'
 draft: false
 tags: ['lap-trinh', 'lap-trinh-c++']
-images: ['/static/thumbnails/2020/Nap-chong-toan-tu-trong-c++.jpg']
+images: ['/static/thumbnails/2020/Nap-chong-toan-tu-trong-cpp.jpg']
 layout: PostLayout
 authors: ['khiemle']
 summary: 'Có bao giờ bạn tự hỏi rằng một hàm có thể được định nghĩa nhiều lần? Một kiểu dữ liệu tự định nghĩa thì có thể thực hiện các toán tử +, -, *, / trên đó không. Bài viết này sẽ giúp các bạn trả lời câu hỏi trên thông qua việc sử dụng nạp chồng toán tử.'
 ---
 
-![Nạp chồng toán tử trong C++](/static/thumbnails/2020/Nap-chong-toan-tu-trong-c++.jpg)
+![Nạp chồng toán tử trong C++](/static/thumbnails/2020/Nap-chong-toan-tu-trong-cpp.jpg)
 
 # Đầu tiên
 
