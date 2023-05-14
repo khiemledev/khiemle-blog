@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 
 # Le Tran Trong Khiem
 
-> With my passion for research and knowledge of machine learning and artificial intelligence, I want to use what I've learned to bring value to projects that can benefit people from all walks of life. 
+> With my passion for research and knowledge of machine learning and artificial intelligence, I want to use what I've learned to bring value to projects that can benefit people from all walks of life.
 
 ## Contact information
 
