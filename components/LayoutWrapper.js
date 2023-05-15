@@ -1,13 +1,17 @@
-import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Logo from '@/data/logo.svg'
-import Link from './Link'
-import SectionContainer from './SectionContainer'
+import siteMetadata from '@/data/siteMetadata'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useRouter } from 'next/router'
 import Footer from './Footer'
+import Link from './Link'
 import MobileNav from './MobileNav'
+import SectionContainer from './SectionContainer'
 import ThemeSwitch from './ThemeSwitch'
 
 const LayoutWrapper = ({ children }) => {
+  const router = useRouter()
+
   return (
     <SectionContainer>
       <div className="flex h-screen flex-col justify-between">
@@ -44,8 +48,21 @@ const LayoutWrapper = ({ children }) => {
             <MobileNav />
           </div>
         </header>
-        <main className="mb-auto">{children}</main>
-        <Footer />
+        <AnimatePresence initial={false} exitBeforeEnter>
+          <motion.div
+            key={router.asPath}
+            initial={{
+              opacity: 0,
+              y: 50,
+            }}
+            layout
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+          >
+            <motion.main className="mb-auto">{children}</motion.main>
+            <Footer />
+          </motion.div>
+        </AnimatePresence>
       </div>
     </SectionContainer>
   )

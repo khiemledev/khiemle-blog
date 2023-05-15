@@ -1,5 +1,7 @@
-import { useEffect, useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 import { useTheme } from 'next-themes'
+import { useEffect, useState } from 'react'
+import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs'
 
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false)
@@ -15,7 +17,30 @@ const ThemeSwitch = () => {
       className="ml-1 mr-1 h-8 w-8 rounded p-1 sm:ml-4"
       onClick={() => setTheme(theme === 'dark' || resolvedTheme === 'dark' ? 'light' : 'dark')}
     >
-      <svg
+      <AnimatePresence exitBeforeEnter>
+        {(theme === 'dark' || resolvedTheme === 'dark') && (
+          <motion.span
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            key="dark-theme"
+          >
+            <BsFillMoonStarsFill />
+          </motion.span>
+        )}
+
+        {theme === 'light' && resolvedTheme === 'light' && (
+          <motion.span
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            key="light-theme"
+          >
+            <BsFillSunFill />
+          </motion.span>
+        )}
+      </AnimatePresence>
+      {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
         fill="currentColor"
@@ -30,7 +55,7 @@ const ThemeSwitch = () => {
         ) : (
           <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
         )}
-      </svg>
+      </svg> */}
     </button>
   )
 }
