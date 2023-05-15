@@ -2179,6 +2179,11 @@ citeproc@^2.4.6, citeproc@^2.4.62:
   resolved "https://registry.npmjs.org/citeproc/-/citeproc-2.4.62.tgz"
   integrity sha512-l3uFfSEwNZp/jlz/TpgyBs85kOww6VlQHbAth0cpbgOn6iulZd+QlFY43LrRelzcYt3FZHTZ3soDyd8lNmkqdw==
 
+classnames@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
+  integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
+
 clean-css@^5.0.0:
   version "5.2.2"
   resolved "https://registry.npmjs.org/clean-css/-/clean-css-5.2.2.tgz"
