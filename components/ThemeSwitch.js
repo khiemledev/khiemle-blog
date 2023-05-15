@@ -11,36 +11,45 @@ const ThemeSwitch = () => {
   useEffect(() => setMounted(true), [])
 
   return (
-    <button
-      aria-label="Toggle Dark Mode"
-      type="button"
-      className="ml-1 mr-1 h-8 w-8 rounded p-1 sm:ml-4"
-      onClick={() => setTheme(theme === 'dark' || resolvedTheme === 'dark' ? 'light' : 'dark')}
-    >
-      <AnimatePresence exitBeforeEnter>
-        {(theme === 'dark' || resolvedTheme === 'dark') && (
-          <motion.span
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            key="dark-theme"
-          >
-            <BsFillMoonStarsFill />
-          </motion.span>
-        )}
+    mounted && (
+      <button
+        aria-label="Toggle Dark Mode"
+        type="button"
+        className="ml-1 mr-1 flex h-8 w-8 items-center justify-center rounded p-1 sm:ml-4"
+        onClick={() => setTheme(theme === 'dark' || resolvedTheme === 'dark' ? 'light' : 'dark')}
+      >
+        <AnimatePresence exitBeforeEnter>
+          {(theme === 'dark' || resolvedTheme === 'dark') && (
+            <motion.span
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{
+                ease: 'easeOut',
+                duration: 0.2,
+              }}
+              key="dark-theme"
+            >
+              <BsFillSunFill />
+            </motion.span>
+          )}
 
-        {theme === 'light' && resolvedTheme === 'light' && (
-          <motion.span
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            key="light-theme"
-          >
-            <BsFillSunFill />
-          </motion.span>
-        )}
-      </AnimatePresence>
-      {/* <svg
+          {theme === 'light' && resolvedTheme === 'light' && (
+            <motion.span
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{
+                ease: 'easeOut',
+                duration: 0.2,
+              }}
+              key="light-theme"
+            >
+              <BsFillMoonStarsFill />
+            </motion.span>
+          )}
+        </AnimatePresence>
+        {/* <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
         fill="currentColor"
@@ -56,7 +65,8 @@ const ThemeSwitch = () => {
           <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
         )}
       </svg> */}
-    </button>
+      </button>
+    )
   )
 }
 
