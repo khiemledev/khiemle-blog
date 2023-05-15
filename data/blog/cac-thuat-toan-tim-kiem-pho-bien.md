@@ -45,9 +45,9 @@ Chúng ta có một mảng A có n phần tử bắt đầu từ vị trí 0. Đ
    - Nếu i == n (tức hết mảng) thì dừng lại và trả kết quả là -1 (không tìm thấy x).
    - Nếu i < n thì quay lại bước 2.
 
-<p align="center">
+<div align="center">
   ![Tìm kiếm tuyến tình](/static/images/2020/05/cac-thuat-toan-tim-kiem-pho-bien/Linear-Search.png)
-</p>
+</div>
 
 Tìm kiếm tuyến tính
 
@@ -118,9 +118,9 @@ Cho một mảng A có n phần tử bắt đầu từ vị trí 0, mảng A đ�
    - Đúng thì quay lại bước 2 (còn chia đôi được).
    - Sai thì dừng và trả về kết quả -1 (không tìm thấy x)
 
-<p align="center">
+<div align="center">
   ![Tìm kiếm nhị phân](/static/images/2020/05/cac-thuat-toan-tim-kiem-pho-bien/Binary-Search.png)
-</p>
+</div>
 
 Tìm kiếm nhị phân
 

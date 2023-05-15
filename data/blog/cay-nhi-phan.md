@@ -26,9 +26,9 @@ Cây nhị phân là một cấu trúc dữ liệu quan trọng mà trong môn C
 
 Cấu trúc cây (Tree) là một tập hợp các phần tử gọi là nút (node), mỗi cây có một nút gốc (root) chứa nhiều nút con, mỗi nút con lại là một tập hợp các nút khác gọi là cây con (subtree).
 
-<p align="center">
+<div align="center">
   ![Cấu trúc cây](/static/images/2020/06/cay-nhi-phan-va-cay-nhi-phan-tim-kiem/Tree.jpg)
-</p>
+</div>
 
 Cấu trúc cây
 
@@ -48,9 +48,9 @@ Khi bạn đã nắm được các khái niệm cơ bản này, chúng ta hãy �
 
 Cây nhị phân là một trường hợp đặc biệt của cấu trúc cây và nó cũng phổ biến nhất. Đúng như tên gọi của nó, cây nhị phân có bậc là 2 và mỗi nút trong cây nhị phân đều có bậc không quá 2.
 
-<p align="center">
+<div align="center">
   ![Cây nhị phân](/static/images/2020/06/cay-nhi-phan-va-cay-nhi-phan-tim-kiem/Tree.jpg)
-</p>
+</div>
 
 Cây nhị phân
 
@@ -131,9 +131,9 @@ Có 3 cách duyệt cây nhị phân:
 
 Để bạn hiểu rõ hơn ba cách duyệt này, chúng ta sẽ sử dụng lại hình ảnh cây nhị phân trên:
 
-<p align="center">
+<div align="center">
   ![Cây nhị phân](/static/images/2020/06/cay-nhi-phan-va-cay-nhi-phan-tim-kiem/BinaryTree.jpg)
-</p>
+</div>
 
 Cây nhị phân
 
@@ -203,9 +203,9 @@ Như vậy là chúng ta đã tìm hiểu về cách tạo một nút, kết n�
 
 Cây nhị phân tìm kiếm là cây nhị phân mà trong đó, các phần tử của cây con bên trái đều nhỏ hơn phần tử hiện hành và các phần tử của cây con bên phải đều lớn hơn phần tử hiện hành. Do tính chất này, cây nhị phân tìm kiếm không được có phần tử cùng giá trị.
 
-<p align="center">
+<div align="center">
   ![Cây nhị phân tìm kiếm](/static/images/2020/06/cay-nhi-phan-va-cay-nhi-phan-tim-kiem/BinarySearchTree.jpg)
-</p>
+</div>
 
 Binary Search Tree
 

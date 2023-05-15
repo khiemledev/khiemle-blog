@@ -30,9 +30,9 @@ RAM (**R**andom **A**ccess **M**emory) là bộ nhớ được dùng để lưu 
 
 Khi trình biên dịch thực hiện biên dịch code, nó sẽ dành riêng một vùng nhớ cho biến được khai báo, liên kết địa chỉ ô nhớ đầu tiên của vùng nhớ đó với tên biến và mỗi khi gọi đến biến đó, nó sẽ tự truy xuất đến vùng nhớ đã được liên kết với tên biến đó. Vùng nhớ của một biến là tập các ô nhớ liền kề nhau. Các biến khác nhau không nhất thiết các vùng nhớ của nó phải liền kề nhau.
 
-<p align="center">
+<div align="center">
 	![Memory structure](/static/images/2020/03/con-tro-va-cap-phat-dong-trong-cpp/Memory-structure.png)
-</p>
+</div>
 
 Memory structure
 

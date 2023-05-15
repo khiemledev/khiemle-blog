@@ -23,9 +23,9 @@ Bảng băm hay HashTable là một cấu trúc mà khi người dùng thực hi
 
 Quá trình ánh xạ khóa vào bảng băm được thực hiện thông qua hàm băm (Hashing). Một bảng băm tốt cần phải có hàm băm tốt. Bảng băm là một mảng có M vị trí được đánh số từ 0 đến M - 1.
 
-<p align="center">
+<div align="center">
   ![Bảng băm](/static/images/2020/06/bang-bam-hash-table/HashTable.jpg)
-</p>
+</div>
 
 HashTable
 
@@ -53,9 +53,9 @@ Thông thường, mình sử dụng phương pháp chia cho dễ cài đặt. Tu
 
 Đối với việc sử dụng phương pháp kết nối trực tiếp, các phần tử bị đụng độ sẽ được thêm vào danh sách liên kết tại h(k) trong bảng băm.
 
-<p align="center">
+<div align="center">
   ![Giải quyết đụng độ bảng băm](/static/images/2020/06/bang-bam-hash-table/HashTable-Chaining.jpg)
-</p>
+</div>
 
 HashTable Chaining
 

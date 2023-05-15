@@ -35,9 +35,9 @@ Ví dụ như bạn có một class con người, có các thuộc tính cơ b�
 
 Ngoài các thuộc tính của class cha, class con còn có thể có thêm các thuộc tính, phương thức của riêng mình. Ví dụ như sinh viên thì có thêm các thuộc tính như MSSV, tên trường, chuyên ngành...
 
-<p align="center">
+<div align="center">
   ![Tính kế thừa](/static/images/2020/05/ke-thua-trong-cpp/Single-Inheritance.jpg)
-</p>
+</div>
 
 Tính kế thừa
 
@@ -89,9 +89,9 @@ Chúng ta đã cùng tìm hiểu qua về kế thừa là gì và tại sao cầ
 
 Kế thừa đơn (single inheritance) là một class con kế thừa duy nhất từ một class cha. Ví dụ như class sinh viên chỉ kế thừa duy nhất từ class con người, đó là một kế thừa đơn.
 
-<p align="center">
+<div align="center">
   ![Đơn kế thừa](/static/images/2020/05/ke-thua-trong-cpp/Single-Inheritance.jpg)
-</p>
+</div>
 
 Đơn kế thừa
 
@@ -99,9 +99,9 @@ Kế thừa đơn (single inheritance) là một class con kế thừa duy nhấ
 
 Kế thừa đa cấp (multilevel inheritance) là một class con kế thừa từ một class cha, class cha đó lại kết thừa từ một lớp khác. Ví dụ như class sinh viên kế thừa từ class học sinh, class học sinh lại kế thừa từ class con người, đó là một kế thừa đa cấp.
 
-<p align="center">
+<div align="center">
   ![Kế thừa đa cấp](/static/images/2020/05/ke-thua-trong-cpp/Multilevel-Inheritance.jpg)
-</p>
+</div>
 
 Kế thừa đa cấp
 
@@ -109,17 +109,17 @@ Kế thừa đa cấp
 
 Kế thừa phân cấp (hierarchical inheritance) là khi có nhiều hơn một class con kế thừa từ class cha. Ví dụ như class sinh viên và class công nhân đều kế thừa từ class cha là con người.
 
-<p align="center">
+<div align="center">
   ![Kế thừa phân cấp](/static/images/2020/05/ke-thua-trong-cpp/Hierarchical-Inheritance.jpg)
-</p>
+</div>
 
 Kế thừa phân cấp
 
 Một sơ đồ class không chỉ có một trong 3 loại kế thừa trên, nó thậm chí có thể có cả 3 và điều này hoàn toàn bình thường và gặp rất thường xuyên.
 
-<p align="center">
+<div align="center">
   ![Sơ đồ class](/static/images/2020/05/ke-thua-trong-cpp/Nested-Inheritance.jpg)
-</p>
+</div>
 
 Sơ đồ Class
 
@@ -167,9 +167,9 @@ Có hai loại phạm vi truy cập, truy cập các thành phần từ bên ngo
   - Các thuộc tính public của A sẽ trở thành thuộc tính protected của B
   - Các thuộc tính protected của A sẽ trở thành thuộc tính protected của B
 
-<p align="center">
+<div align="center">
   ![Phạm vi truy cập trong kế thừa C++](/static/images/2020/05/ke-thua-trong-cpp/Access-modifiers-inheritance.jpg)
-</p>
+</div>
 
 Phạm vi truy cập trong kế thừa C++
 

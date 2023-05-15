@@ -38,9 +38,9 @@ Các thao tác cơ bản trên ngăn xếp như sau:
 - Pop: lấy phần tử nằm trên cùng ra khỏi ngăn xếp và trả về giá trị của phần tử đó (nếu ngăn xếp không rỗng)
 - Top: trả về giá trị của phần tử nằm trên cùng của ngăn xếp (nếu ngăn xếp không rỗng)
 
-<p align="center">
+<div align="center">
     ![Ngăn xếp](/static/images/2020/04/ngan-xep-va-hang-doi/Stack.png)
-</p>
+</div>
 
 Ngăn xếp
 
@@ -169,9 +169,9 @@ Các thao tác cơ bản trên hàng đợi:
 - DeQueue: lấy phần tử đầu tiên ra khỏi hàng đợi (nếu hàng đợi không rỗng)
 - Front: trả về giá trị của phần tử ở đầu hàng đợi (nếu hàng đợi không rỗng)
 
-<p align="center">
+<div align="center">
     ![Hàng đợi](/static/images/2020/04/ngan-xep-va-hang-doi/Queue.png)
-</p>
+</div>
 
 Hàng đợi
 

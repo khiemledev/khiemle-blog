@@ -47,9 +47,9 @@ Như định nghĩa của đa hình, đa hình thực hiện cùng một thông 
 
 Ví dụ mình có bài toán công ty quản lý hai loại nhân viên là nhân viên văn phòng (NVVP) và nhân viên sản xuất (NVSX), mình sẽ cho người dùng nhập nhân nhiên và tính lương sau đó xuất ra. Mình sẽ có sơ đồ class như sau:
 
-<p align="center">
+<div align="center">
     ![Sơ đồ class](/static/images/2020/06/da-hinh-trong-cpp/Polymorphism-Class-Diagram-1.jpg)
-</p>
+</div>
 
 Sơ đồ Class
 
